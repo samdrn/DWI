@@ -1,0 +1,268 @@
+<!--Ejercicio #1-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos Embebidos</title>
+    <link rel="stylesheet" href="estilos1.css"/>
+</head>
+    <body style="background-color: lightblue;">
+        <h2 style="color: white;">Bienvenidos a mi primera página</h2>
+
+        <p style="font-weight: bold;">Este es un párrafo y su texto aparece en negrita</p>
+    
+        <p style="text-align: justify;">Este es el segundo párrafo. Aquí el texto aparece justificado en la página.</p>
+
+        <p style="font-size: 12px;">Este es el tercer párrafo. Aquí el texto aparece con un tamaño de 12 píxeles.</p>
+    </body>
+</html>
+
+<!--Ejercicio #2-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando la etiqueta style</title>
+
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            background-color: blue;
+            color: white;
+            text-align: center;
+        }
+
+        .contenido {
+            width: 80%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .cuento {
+            color: navy;
+            text-align: justify;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: green;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+    <body>
+        <h1>Usando la etiqueta style</h1>
+
+        <div class="contenido">
+            <p>Este es un ejemplo de párrafo dentro del div principal</p>
+            <p class="cuento">Este párrafo pertenece a la clase cuento y se mostrará justificado y en color navy</p>
+            <a href = "https://www.google.com">Ir a Google</a>
+        </div>
+    </body>
+</html>
+
+<!--Ejercicio #3-->
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Centroamérica - Cultura y Naturaleza</title> 
+    <!-- Cargar fuentes de Google Fonts -->
+    <link rel="stylesheet" href="styles.css">
+    <link 
+href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet"> 
+     
+</head> 
+<body> 
+    <header> 
+        <h1 class="main-title">Descubre Centroamérica</h1> 
+        <h2 class="subtitle">Un Viaje por la Cultura y Naturaleza</h2> 
+    </header> 
+     
+    <section class="intro"> 
+        <p class="intro-text"> 
+            Centroamérica es una región vibrante que conecta Norteamérica con 
+Sudamérica. Es conocida por su increíble biodiversidad, su rica historia 
+cultural, y la calidez de su gente. Desde las antiguas ruinas mayas de 
+Guatemala hasta las playas paradisíacas de Costa Rica, hay mucho que explorar 
+y descubrir. En esta página, te invitamos a conocer algunos de los países que 
+forman parte de esta fascinante región. 
+        </p> 
+    </section> 
+     
+    <section class="country-section"> 
+        <article> 
+            <h3>Guatemala</h3> 
+            <img src="https://cdn.pixabay.com/photo/2023/01/05/18/51/guatemala-7699582_1280.jpg" alt="Imagen de Guatemala" class="country-image"> 
+            <p> 
+                Guatemala, el corazón del mundo maya, es un país de 
+contrastes donde se mezcla la historia precolombina con la modernidad. Sus 
+impresionantes volcanes, lagos cristalinos y bosques nubosos ofrecen una 
+experiencia única a los visitantes. Antigua Guatemala, una ciudad colonial 
+con calles empedradas y edificios históricos, es uno de los destinos más 
+populares. Además, el Lago de Atitlán, rodeado por montañas y pueblos 
+indígenas, es considerado uno de los lagos más bellos del mundo. 
+            </p> 
+            <a href="https://es.wikipedia.org/wiki/Guatemala" 
+target="_blank">Más sobre Guatemala</a> 
+        </article> 
+ 
+        <article> 
+            <h3>El Salvador</h3> 
+            <img src="https://www.bcie.org/fileadmin/_processed_/7/a/csm_EL_SalvadorBANNER_Mesa_de_trabajo_1_Mesa_de_trabajo_1_Mesa_de_trabajo_1_cd255ca867.png" alt="Imagen de El Salvador" class="country-image"> 
+            <p> 
+                El Salvador, el país más pequeño de Centroamérica, ofrece una 
+mezcla perfecta de montañas, playas y cultura. Aunque es pequeño en tamaño, 
+su variedad geográfica es impresionante. Desde las olas perfectas para 
+surfistas en playas como El Tunco, hasta las rutas de montaña como la Ruta de 
+las Flores, donde se pueden visitar pueblos pintorescos y disfrutar de la 
+gastronomía local. La capital, San Salvador, combina lo moderno con lo 
+tradicional, ofreciendo tanto rascacielos como mercados locales vibrantes. 
+            </p> 
+            <a href="https://es.wikipedia.org/wiki/El_Salvador" 
+target="_blank">Más sobre El Salvador</a> 
+        </article> 
+ 
+        <article> 
+            <h3>Costa Rica</h3> 
+            <img src="https://sheltercity.org/app/uploads/2021/10/Foto-San-Jose.jpeg" alt="Imagen de Costa 
+Rica" class="country-image"> 
+            <p> 
+                Costa Rica es conocida mundialmente por su enfoque en la 
+sostenibilidad y la protección del medio ambiente. Este país sin ejército 
+desde 1949, dedica gran parte de sus recursos a la conservación de la 
+naturaleza. Es el hogar de más del 5% de la biodiversidad mundial, con 
+parques nacionales que albergan una vasta variedad de flora y fauna. Los 
+turistas disfrutan de actividades como el senderismo en la selva tropical, el 
+avistamiento de aves, y la visita a las playas del Caribe y del Pacífico. 
+            </p> 
+            <a href="https://es.wikipedia.org/wiki/Costa_Rica" 
+target="_blank">Más sobre Costa Rica</a> 
+        </article> 
+ 
+        <article> 
+            <h3>Panamá</h3> 
+            <img src="https://cdn.pixabay.com/photo/2020/01/05/09/39/panama-city-4742656_1280.jpg" alt="Imagen de 
+Panamá" class="country-image"> 
+            <p> 
+                Panamá es famoso por su canal, una de las obras de ingeniería 
+más importantes del mundo, que conecta los océanos Atlántico y Pacífico. Pero 
+más allá del canal, Panamá ofrece una mezcla fascinante de modernidad y 
+tradición. La Ciudad de Panamá, con su impresionante horizonte de 
+rascacielos, contrasta con el Casco Viejo, el distrito histórico con calles 
+adoquinadas y arquitectura colonial. Además, los turistas pueden explorar las 
+Islas de San Blas, habitadas por los indígenas Guna Yala, o disfrutar de las 
+montañas y selvas tropicales de la región de Boquete. 
+            </p> 
+            <a href="https://es.wikipedia.org/wiki/Panam%C3%A1" 
+target="_blank">Más sobre Panamá</a> 
+        </article>
+        
+        <article> 
+            <h3>Nicaragua</h3> 
+            <img src="https://media.istockphoto.com/id/912242548/photo/granada-nicaragua-and-the-cathedral-of-granada.jpg?s=612x612&w=0&k=20&c=7Zh1a4DsikyA9wfznON4ghTPbN7_BWpGKUmNJl1vMgk=" alt="Imagen de Nicaragua" class="country-image"> 
+            <p> 
+                Nicaragua, conocida como la "Tierra de Lagos y Volcanes", es un país de belleza natural impresionante y rica historia cultural. Sus paisajes varían desde las playas vírgenes del Pacífico hasta las selvas tropicales del Caribe. La ciudad colonial de Granada, con su arquitectura colorida y calles empedradas, es un destino popular para los visitantes. Además, el Lago de Nicaragua, el lago más grande de América Central, alberga la Isla de Ometepe, formada por dos volcanes y conocida por su biodiversidad y sitios arqueológicos. 
+            </p> 
+            <a href="https://es.wikipedia.org/wiki/Nicaragua" target="_blank">Más sobre Nicaragua</a>
+        </article>
+
+        <article> 
+            <h3>Honduras</h3> 
+            <img src="https://th.bing.com/th/id/R.eaaa31a5d5f2889a6f1a881f3955a13d?rik=PTprQdA%2ffLMI7A&riu=http%3a%2f%2fimages.unsplash.com%2fphoto-1579390497555-d5842e45e622%3fcrop%3dentropy%26cs%3dtinysrgb%26fit%3dmax%26fm%3djpg%26ixid%3dMnwxMjA3fDB8MXxzZWFyY2h8Mnx8aG9uZHVyYXN8fDB8fHx8MTYyNzgzMTAwOA%26ixlib%3drb-1.2.1%26q%3d80%26w%3d1080&ehk=upq%2fdyI%2fMYYOo7vUXWgPn57GUgmL6uY%2fIEbtzEWKQIA%3d&risl=&pid=ImgRaw&r=0" alt="Imagen de Honduras" class="country-image"> 
+            <p> 
+                Honduras es un país lleno de maravillas naturales y culturales. Es hogar de las impresionantes ruinas mayas de Copán, un sitio arqueológico que ofrece una visión fascinante de la civilización maya. Además, Honduras cuenta con una costa caribeña que incluye las Islas de la Bahía, famosas por sus arrecifes de coral y oportunidades para el buceo y snorkel. La región montañosa del interior del país ofrece paisajes espectaculares y es ideal para el senderismo y la observación de aves. La cultura hondureña es rica en tradiciones, música y gastronomía, haciendo de este país un destino diverso y atractivo para los viajeros. 
+            </p> 
+            <a href="https://es.wikipedia.org/wiki/Honduras" target="_blank">Más sobre Honduras</a>
+        </article>
+
+        <article> 
+            <h3>Belice</h3> 
+            <img src="https://th.bing.com/th/id/R.1cce3c8cd493ca6ae6dbbefe49843810?rik=KrzoIUiGZfxRdg&pid=ImgRaw&r=0" alt="Imagen de Belice" class="country-image"> 
+            <p> 
+                Belice es un pequeño país en la costa este de Centroamérica, conocido por su impresionante barrera de coral, la segunda más grande del mundo. Este país ofrece una mezcla única de culturas, incluyendo influencias mayas, criollas, mestizas y garífunas. Los visitantes pueden explorar las ruinas mayas de Xunantunich y Caracol, disfrutar de las playas de arena blanca y aguas cristalinas, o aventurarse en la selva tropical para observar la vida silvestre. Belice es un destino ideal para los amantes del buceo, el snorkel y la naturaleza. 
+            </p> 
+            <a href="https://es.wikipedia.org/wiki/Belice" target="_blank">Más sobre Belice</a>
+        </article>
+        
+        </section>
+    <section class="additional-info"> 
+        <h2 class="subtitle">Datos Adicionales de los Países</h2> 
+        <table class="country-table"> 
+            <thead> 
+                <tr> 
+                    <th>País</th> 
+                    <th>Capital</th> 
+                    <th>Población (millones)</th> 
+                    <th>Idioma Oficial</th> 
+                </tr> 
+            </thead> 
+            <tbody> 
+                <tr> 
+                    <td>Guatemala</td> 
+                    <td>Ciudad de Guatemala</td> 
+                    <td>17.2</td> 
+                    <td>Español</td> 
+                </tr> 
+                <tr> 
+                    <td>El Salvador</td> 
+                    <td>San Salvador</td> 
+                    <td>6.5</td> 
+                    <td>Español</td> 
+                </tr> 
+                <tr> 
+                    <td>Costa Rica</td> 
+                    <td>San José</td> 
+                    <td>5.1</td> 
+                    <td>Español</td> 
+                </tr> 
+                <tr> 
+                    <td>Panamá</td> 
+                    <td>Ciudad de Panamá</td> 
+                    <td>4.3</td> 
+                    <td>Español</td> 
+
+                </tr> 
+                <tr> 
+                    <td>Nicaragua</td> 
+                    <td>Managua</td> 
+                    <td>6.8</td> 
+                    <td>Español</td>
+                </tr> 
+                <tr> 
+                    <td>Honduras</td> 
+                    <td>Tegucigalpa</td> 
+                    <td>10.1</td> 
+                    <td>Español</td>
+                </tr>
+
+                <tr> 
+                    <td>Belice</td> 
+                    <td>Belmopán</td> 
+                    <td>0.4</td> 
+                    <td>Inglés</td>
+            </tbody> 
+        </table> 
+    </section> 
+    <footer> 
+        <p class="footer-text">Explora más sobre estos maravillosos países y 
+planea tu próxima aventura a Centroamérica.</p> 
+    </footer> 
+</body> 
+</html> 
