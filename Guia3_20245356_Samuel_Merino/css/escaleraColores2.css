@@ -1,0 +1,57 @@
+/*Escalera de Colores para resultado 2*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: system-ui, Arial, sans-serif;
+    padding: 20px;
+}
+
+h1{
+    margin-bottom: 16px;
+}
+
+#diez_de_diamantes, 
+#sota_de_diamantes, 
+#reina_de_diamantes, 
+#rey_de_diamantes, 
+#as_de_diamantes{
+    position: absolute;
+}
+
+img{
+    display: block;
+}
+
+#diez_de_diamantes{
+    top: 40px;
+    left: 40px;
+    z-index: 50;
+}
+
+#sota_de_diamantes{
+    top: 80px;
+    left: 90px;
+    z-index: 40;
+}
+
+#reina_de_diamantes{
+    top: 120px;
+    left: 140px;
+    z-index: 30;
+}
+
+#rey_de_diamantes{
+    top: 160px;
+    left: 190px;
+    z-index: 20;
+}
+
+#as_de_diamantes{
+    top: 200px;
+    left: 240px;
+    z-index: 10;
+}
