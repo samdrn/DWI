@@ -13,16 +13,16 @@
 
 body{ 
   margin: 0; 
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family: system-ui, sans-serif;
   color: var(--text); 
-  background: var(--bg); 
+  background-color: var(--bg); 
   line-height: 1.6; 
 }
 
 .header{ 
   text-align: center; 
   padding: 2rem 1rem 1rem; 
-  border-bottom: 1px solid rgba(255,255,255,.08); 
+  border-bottom: 1px solid rgba(255,255,255,0.1); 
 }
 
 .titulo{ 
@@ -31,58 +31,148 @@ body{
 }
 
 .subtitulo{ 
-  margin: .5rem 0 0;  
+  color: var(--accent);
+  margin: 0.3rem 0 0;  
 }
 
 .contenedor{ 
-  max-width:900px; 
-  margin:1.25rem auto 2rem; 
-  padding:0 1rem; 
+  width: 90%;
+  max-width:1100px; 
+  margin: 2rem auto;
+  display: flex; 
+  flex-direction: column;
+  gap: 2rem; 
 }
 
-/* bloques de guías */
-.grupo{
+.bloque{
   background:var(--card);
-  border:1px solid rgba(255,255,255,.10);
-  border-radius:.8rem;
-  padding:1rem;
-  margin:1rem 0;
-  box-shadow:0 6px 16px rgba(0,0,0,.25);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow:0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.grupo__titulo{
-  margin:0 0 .5rem;
-  font-size:1.25rem;
-  position:relative;
+.bloque h2{
+  color: var(--accent);
+  margin-bottom: 0.8rem;
 }
 
-.grupo__titulo::after{
-  content:"";
-  display:block;
-  height:2px; width:64px;
-  background:var(--accent);
-  margin-top:.35rem;
-  opacity:.8;
+.guias{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
-/* Lista con los enlaces */
-.lista{ 
-  list-style:none; 
-  padding:0; 
-  margin:.5rem 0 0; 
-  display:grid; 
-  gap:.6rem; 
+.guia{
+  flex: 1 1 45%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+}
+
+.guia h3{
+  margin-top: 0;
+  color: var(--accent);
+}
+
+.guia p{
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+
+.lista{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista li{
+  margin-bottom: 0.5rem;
 }
 
 .lista a{
-  display:block; padding:.8rem 1rem; border-radius:.6rem;
-  color:var(--text); text-decoration:none;
-  background:rgba(255,255,255,.02);
-  border:1px solid rgba(255,255,255,.08);
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.4rem 0.6rem;
+  display: inline-block;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: background 0.3s;
 }
 
 .lista a:hover{
-  outline:2px solid rgba(34,211,238,.35);
-  transform: translateY(-1px);
-  box-shadow:0 6px 16px rgba(0,0,0,.25);
+  background: var(--accent);
+  color: #000;
+}
+
+.foda-lista{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+
+.foda-lista li{
+  flex: 1 1 45%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.footer{
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--accent);
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer a{
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footer a:hover{
+  text-decoration: underline;
+}
+
+@media (max-width: 768px){
+  .titulo{
+    font-size: 1.6rem;
+  }
+  
+  .guias{
+    flex-direction: column;
+  }
+
+  .guia{
+    flex: 1 1 100%;
+  }
+
+  .foda-lista li{
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px){
+  body {
+    font-size: 0.95rem;
+  }
+
+  .bloque {
+    padding: 1rem;
+  }
+
+  .guia h3 {
+    font-size: 1rem;
+  }
+
+  .lista a{
+    display: block;
+  }
 }
